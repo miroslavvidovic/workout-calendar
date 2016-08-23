@@ -1,5 +1,5 @@
 <?php
-namespace WCal;
+namespace WCal\Model;
 
 class WorkoutData
 {
