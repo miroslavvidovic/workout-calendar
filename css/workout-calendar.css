@@ -155,4 +155,18 @@
       color: #fff;
       background-color: #661156;
     }
+    
+    /* Calendar arrows */
+    #cal-heatmap-PreviousDomain-selector{
+        margin-bottom: 20px; 
+        margin-top: 20px;
+        background-color:#661156;
+        color:#fff;
+    }
+    #cal-heatmap-NextDomain-selector{
+        margin-bottom: 20px;
+        margin-top: 20px;
+        background-color: #661156;
+        color:#fff;
+    }
 }
