@@ -14,8 +14,8 @@
 
     <div class="row">
       <div class="col-lg-12">
-        <button id="cal-heatmap-PreviousDomain-selector" style="margin-bottom: 10px; margin-top: 20px" class="btn"><i class="fa fa-chevron-left"></i></button>
-        <button id="cal-heatmap-NextDomain-selector" style="margin-bottom: 10px; margin-top: 20px" class="btn"><i class="fa fa-chevron-right"></i></button>
+        <button id="cal-heatmap-PreviousDomain-selector" class="btn"><i class="fa fa-chevron-left"></i></button>
+        <button id="cal-heatmap-NextDomain-selector" class="btn"><i class="fa fa-chevron-right"></i></button>
         <div id="cal-heatmap"></div>
 
       <!-- Heatmap calendar script -->
@@ -35,6 +35,7 @@
         // Create the heatmap
         var cal = new CalHeatMap();
           cal.init({
+            itemName: "minute",
             itemSelector: "#cal-heatmap",
             domain: "month",
             subDomain: "day",
@@ -43,13 +44,15 @@
             // Use the parser funcition after load
             afterLoadData: parser,
             start: new Date(2016, 6, 25),
-            cellSize: 25,
+            cellSize: 30,
             cellRadius: 3,
             cellPadding: 5,
             domainGutter: 25,
+            domainMargin: 2,
             highlight: "now",
             range:5,
             tooltip:true,
+            // missing values have 0 value
             considerMissingDataAsZero: true,
             domainDynamicDimension: true,
             previousSelector: "#cal-heatmap-PreviousDomain-selector",
@@ -57,8 +60,17 @@
             label: {
               position: "bottom"
             },
-            legend: [10, 20, 30, 40],
-              legendColors: ["#ecf5e2", "#232181"],
+            legend: [25, 35, 45, 55],
+              //legendColors: ["#ecf5e2", "#232181"],
+            legendColors: {
+              min: "#fdffbe",
+              max: "#232181",
+              empty: "#dbddce",
+              // base color for missing values if they are not selected as empty
+              base: "#661156"
+            },
+              //empty: "white",
+              //base: "gray",
               legendCellSize: 20
           });
       </script>

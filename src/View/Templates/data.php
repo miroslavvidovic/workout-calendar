@@ -26,7 +26,7 @@
                     <tr>
                       <th>ID</th>
                       <th>Date</th>
-                      <th>Value</th>
+                      <th>Minutes</th>
                       <th>Action</th>
                     </tr>
                   </thead>
