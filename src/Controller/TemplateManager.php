@@ -27,4 +27,8 @@ class TemplateManager
         echo $this->template->render('data');
     }
     
+    public function update($id){
+        echo $this->template->render('form', ['id' => $id]);
+    }
+    
 }

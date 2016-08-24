@@ -25,4 +25,12 @@ class DataWorker
         $this->data->delete($id);
     }
     
+    function selectOne($id){
+        $res = $this->data->readOne($id);
+        return $res;
+    }
+    
+    function update(){
+        $this->data->update();
+    }
 }

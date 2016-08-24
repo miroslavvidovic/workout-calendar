@@ -37,7 +37,7 @@
                       <td>$key</td>
                       <td>". date('d.m.Y.',$value[0]). "</td>
                       <td>$value[1]</td>
-                      <td><a href='/delete/$key/' class='btn btn-danger'>Delete</a></td>
+                      <td><a href='/update/$key/' class='btn btn-primary'>Update</a> <a href='/delete/$key/' class='btn btn-danger'>Delete</a></td>
                     </tr>
             ";
           }

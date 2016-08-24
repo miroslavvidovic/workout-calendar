@@ -2,8 +2,11 @@
     "require": {
         "league/csv": "^8.0",
         "altorouter/altorouter": "^1.2",
-        "filp/whoops": "^2.1",
-        "league/plates": "^3.1"
+        "league/plates": "^3.1",
+        "raveren/kint": "^1.0"
+    },
+    "require-dev": {
+        "filp/whoops": "^2.1"
     },
     "autoload": {
         "psr-4": {

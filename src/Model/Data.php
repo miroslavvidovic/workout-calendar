@@ -44,9 +44,14 @@ class Data
         return $result;
     }
     
-    public function update($id){
-        // row to be updated
-        $result = $this->readOne($id);
+    public function update(){
+        if (filter_input(INPUT_SERVER, 'REQUEST_METHOD') == "POST"){
+            $id = filter_input(\INPUT_POST, 'id', FILTER_SANITIZE_STRING);
+            $new_timestamp = filter_input(\INPUT_POST, 'timestamp', FILTER_SANITIZE_STRING);
+            $new_value = filter_input(\INPUT_POST, 'value', FILTER_SANITIZE_NUMBER_INT);
+        }
+        $date = DateTime::createFromFormat('d.m.Y', $new_timestamp);
+        $new_timestamp = $date->getTimestamp();
         // all the data
         $results = $this->readAll();
         
@@ -59,7 +64,6 @@ class Data
             array_push($rows, $value[0].','.$value[1]);
 
         }
-        
         $writer = Writer::createFromPath($this->data_file, 'w+');
         $writer->insertAll($rows); 
         

@@ -13,6 +13,9 @@ $whoops->register();
 $router = new AltoRouter();
 $router->setBasePath('');
 
+// Kint
+Kint::$theme = 'solarized-dark';
+
 // Setup the URL routing.
 // 1-http request, 2-matching url, 3-path to match, 4-name
 $router->map('GET','/', function(){
@@ -43,6 +46,16 @@ $router->map('POST','/write/', function(){
 $router->map('GET', '/delete/[i:id]/' , function($id){
     $worker = new DataWorker();
     $worker->deleteData($id);
+});
+//////
+$router->map('GET', '/update/[i:id]/' , function($id){
+    $tmanager = new TemplateManager();
+    $tmanager->update($id);
+});
+
+$router->map('POST', '/update/' , function(){
+    $worker = new DataWorker();
+    $worker->update();
 });
 
 $match = $router->match();

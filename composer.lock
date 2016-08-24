@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d2f8daad2f123e095485b45a400f7ba4",
-    "content-hash": "0707b37843ea115bd5eef9d3bb1f82da",
+    "hash": "d5904499ea30c270f7b0c22044b18e2a",
+    "content-hash": "0205a3a50d6b09e47e8ffb6243622286",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -61,66 +61,6 @@
                 "routing"
             ],
             "time": "2015-11-30 00:47:43"
-        },
-        {
-            "name": "filp/whoops",
-            "version": "2.1.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/filp/whoops.git",
-                "reference": "8828aaa2178e0a19325522e2a45282ff0a14649b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/8828aaa2178e0a19325522e2a45282ff0a14649b",
-                "reference": "8828aaa2178e0a19325522e2a45282ff0a14649b",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.5.9"
-            },
-            "require-dev": {
-                "mockery/mockery": "0.9.*",
-                "phpunit/phpunit": "^4.8 || ^5.0",
-                "symfony/var-dumper": "~3.0"
-            },
-            "suggest": {
-                "symfony/var-dumper": "Pretty print complex values better with var-dumper available",
-                "whoops/soap": "Formats errors as SOAP responses"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Whoops\\": "src/Whoops/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Filipe Dobreira",
-                    "homepage": "https://github.com/filp",
-                    "role": "Developer"
-                }
-            ],
-            "description": "php error handling for cool kids",
-            "homepage": "https://github.com/filp/whoops",
-            "keywords": [
-                "error",
-                "exception",
-                "handling",
-                "library",
-                "whoops",
-                "zf2"
-            ],
-            "time": "2016-05-06 18:25:35"
         },
         {
             "name": "league/csv",
@@ -230,9 +170,121 @@
                 "views"
             ],
             "time": "2015-07-09 02:14:40"
+        },
+        {
+            "name": "raveren/kint",
+            "version": "1.0.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/raveren/kint.git",
+                "reference": "c8423b9928bd35bf6ad14c688ab9c6d17d97d0eb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/raveren/kint/zipball/c8423b9928bd35bf6ad14c688ab9c6d17d97d0eb",
+                "reference": "c8423b9928bd35bf6ad14c688ab9c6d17d97d0eb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "Kint.class.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rokas Šleinius",
+                    "homepage": "https://github.com/raveren"
+                },
+                {
+                    "name": "Contributors",
+                    "homepage": "https://github.com/raveren/kint/contributors"
+                }
+            ],
+            "description": "Kint - debugging helper for PHP developers",
+            "homepage": "https://github.com/raveren/kint",
+            "keywords": [
+                "debug",
+                "kint",
+                "php"
+            ],
+            "time": "2015-09-16 14:09:00"
         }
     ],
-    "packages-dev": [],
+    "packages-dev": [
+        {
+            "name": "filp/whoops",
+            "version": "2.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/filp/whoops.git",
+                "reference": "8828aaa2178e0a19325522e2a45282ff0a14649b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/8828aaa2178e0a19325522e2a45282ff0a14649b",
+                "reference": "8828aaa2178e0a19325522e2a45282ff0a14649b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*",
+                "phpunit/phpunit": "^4.8 || ^5.0",
+                "symfony/var-dumper": "~3.0"
+            },
+            "suggest": {
+                "symfony/var-dumper": "Pretty print complex values better with var-dumper available",
+                "whoops/soap": "Formats errors as SOAP responses"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Whoops\\": "src/Whoops/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Filipe Dobreira",
+                    "homepage": "https://github.com/filp",
+                    "role": "Developer"
+                }
+            ],
+            "description": "php error handling for cool kids",
+            "homepage": "https://github.com/filp/whoops",
+            "keywords": [
+                "error",
+                "exception",
+                "handling",
+                "library",
+                "whoops",
+                "zf2"
+            ],
+            "time": "2016-05-06 18:25:35"
+        }
+    ],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": [],
