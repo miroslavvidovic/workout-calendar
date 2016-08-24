@@ -6,7 +6,7 @@
       <div class="col-lg-12">
         <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
         <h1>About</h1>
-        <p>This application is a test of the Cal-Heatmap javascript module.</p>
+        <p>This application started as a test of the Cal-Heatmap javascript library.</p>
         <p>Application uses the following libraries:</p>
         <ul>
           <li>
@@ -31,6 +31,7 @@
             <a href="https://github.com/thephpleague/plates">The PHP League Plates</a>
           </li>
         </ul>
+        <p> Miroslav Vidović 2016 </p>
       </div>
     </div>
 
